@@ -10,7 +10,7 @@ public class SquareRoot {
         int right=x;
         int left=0;
         while((right-left)>1){
-            int mid= (left+(right-left)/2);
+            int mid= (left+right)/2;
             if((mid*mid)>x)
                 right=mid;
             else
@@ -19,6 +19,6 @@ public class SquareRoot {
         return left;
 	}
 	public static void main(String[] args) {
-		System.out.println(SquareRoot.sqrt(25));
+		System.out.println(SquareRoot.sqrt(625));
 	}
 }
