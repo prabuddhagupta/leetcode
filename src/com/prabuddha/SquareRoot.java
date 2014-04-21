@@ -16,9 +16,9 @@ public class SquareRoot {
             else
                 left=mid;
         }
-        return (int)left;
+        return left;
 	}
 	public static void main(String[] args) {
-		System.out.println(SquareRoot.sqrt(-25));
+		System.out.println(SquareRoot.sqrt(25));
 	}
 }
