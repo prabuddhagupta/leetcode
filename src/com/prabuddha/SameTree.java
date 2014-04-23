@@ -12,6 +12,7 @@ public class SameTree {
 			return false;
 		}
 		
+		//if both node value is same, check the left and right tree recursively
 		boolean left = isSameTree(node1.left, node2.left);
 		boolean right = isSameTree(node1.right, node2.right);
 		return left && right;
