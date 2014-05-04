@@ -4,21 +4,32 @@ package com.prabuddha;
 
 public class SquareRoot {
 	public static int sqrt(int x) {
-	    if(x<=0) return 0;
-        if (x==1) return 1;
-      
-        int right=x;
-        int left=0;
-        while((right-left)>1){
-            int mid= (left+right)/2;
-            if((mid*mid)>x)
-                right=mid;
-            else
-                left=mid;
-        }
-        return left;
+
+		int right = x;
+		int left = 0;
+
+		int mid = (right + left) / 2;
+
+		while (true) {
+			if((mid * mid == x) ||(mid * mid < x && ((mid + 1) * (mid + 1) > x))){
+				return mid;
+			}
+                     
+			if(mid *mid>x){
+				right = mid;
+			}
+			else{
+				left = mid;
+			}
+			
+			mid = (right + left) / 2;
+		}
+
+		//return mid;
 	}
+
 	public static void main(String[] args) {
-		System.out.println(SquareRoot.sqrt(625));
+		System.out.println(SquareRoot.sqrt(626));
 	}
+
 }
