@@ -2,7 +2,6 @@
 
 package com.prabuddha;
 
-
 public class LinkedListCycle {
 	public static boolean hasCycle(ListNode head) {
 		if (head == null) // list does not exist..so no loop either.

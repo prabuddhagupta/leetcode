@@ -24,8 +24,6 @@ public class SquareRoot {
 			
 			mid = (right + left) / 2;
 		}
-
-		//return mid;
 	}
 
 	public static void main(String[] args) {
